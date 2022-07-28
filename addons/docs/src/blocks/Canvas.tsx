@@ -37,6 +37,7 @@ const getPreviewProps = (
       previewProps: {
         ...props,
         withSource: getSourceProps({ code: decodeURI(mdxSource) }, docsContext, sourceContext),
+        isExpanded: sourceState === SourceState.OPEN,
       },
     };
   }
